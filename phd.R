@@ -18,16 +18,20 @@ test_y=test[,18]
 test_x=test[,-18]
 
 #training
-#glm
+
+#glm              working
 mod_glm = glm(Y~.,data=train, family = "binomial", maxit = 50)
-#lasso
+#lasso not        working
 mod_lasso = glmnet(data.matrix(train_x), train_y, family = "binomial", alpha = 1)
-#Backward AIC
+#Backward AIC     working
 mod_aic = stepAIC(lm(Y~.,data = train), direction = 'backward')
 
-#test
-#glm
+#test accuracy
+
+#glm 
+sum(as.matrix(as.numeric(predict(mod_glm,test)>=0.5)-test_y)==0)/length(as.matrix(as.numeric(predict(mod_glm,test)>=0.5)-test_y))
 #lasso
+
 #Backward AIC
 sum(as.matrix(as.numeric(predict(mod_aic,test)>=0.5)-test_y)==0)/length(as.matrix(as.numeric(predict(mod_aic,test)>=0.5)-test_y))
 
