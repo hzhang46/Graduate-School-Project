@@ -1,0 +1,24 @@
+Table 4: Individual School Analysis,,,,,,
+Joint Analysis,Logistic regression,,Both AIC,,Both BIC,
+,coeff, p-value,coeff,p-value,coeff,p-value
+intercept,-0.46087,0.00033,-0.43215,0.00034,-0.56292,0
+funding_indicator,0.93681,0,0.90626,0,1.08368,0
+Citzenship-Other Asian Country,0.623,0.00124,0.57039,0.0001,0.56832,0.00005
+Citzenship-China,,,0.2927,0.04076,0.30104,0.02982
+Citzenship-Africa,0.71522,0.03156,0.81684,0.00951,0.81832,0.009
+avs_net_cost,,,,,,
+PC1,,,,,,
+PC3,,,,,,
+GPA_trend ,0.76153,0.01665,0.93046,0.00054,0.9749,0.00028
+s_start_year,-0.81587,0,-0.78175,0,-0.81552,0
+GD Non-Harpur,,,,,,
+funding_indicator : GD Non-Harpur,,,0.45695,0.03403,0.59239,0
+Citzenship-Other Asian Country : GD Non-Harpur,,,,,,
+Citzenship-China : GD Non-Harpur,,,,,,
+Citzenship-Africa : GD Non-Harpur,,,,,,
+avs_net_cost : GD Non-Harpur,0.33512,0.00816,0.35352,0.00568,0.32011,0.0096
+PC1 : GD Non-Harpur,,,,,,
+PC3 : GD Non-Harpur,,,,,,
+GPA_trend  : GD Non-Harpur,,,,,,
+s_start_year : GD Non-Harpur,,,,,,
+s_start_year : GD Non-Harpur,,,,,,
